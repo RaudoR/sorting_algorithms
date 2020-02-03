@@ -5,14 +5,13 @@
  */
 void insertion_sort_list(listint_t **list)
 {
-	listint_t *iNode = NULL, *pNode = NULL;
+	listint_t *pNode = NULL;
 
 	if (list == NULL || *list == NULL || (*list)->next == NULL)
 		return;
-	iNode = *list;
-	while (iNode != NULL)
+	pNode = *list;
+	while (pNode != NULL)
 	{
-		pNode = iNode;
 		while (pNode->prev != NULL && pNode->n < pNode->prev->n)
 		{
 			pNode->prev->next = pNode->next;
@@ -27,7 +26,7 @@ void insertion_sort_list(listint_t **list)
 				pNode->prev->next = pNode;
 			print_list(*list);
 		}
-		iNode = iNode->next;
+		pNode = pNode->next;
 	}
 }
 
