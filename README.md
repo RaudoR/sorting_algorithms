@@ -1,2 +1,2 @@
-# sorted algorithm
+# Sorting algorithm
 ## Read under construction
