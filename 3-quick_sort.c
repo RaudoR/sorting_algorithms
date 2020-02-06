@@ -38,6 +38,7 @@ void quickSort_helper(int arr[], int low, int high, size_t size)
  * @array:- the given array.
  * @lo:- the beginning of the array.
  * @hi:- the end of the array.
+ * @size: size of the array.
  * Return:- returning an index.
  */
 
